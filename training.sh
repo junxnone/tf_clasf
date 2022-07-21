@@ -1,2 +1,2 @@
 mkdir -p output
-python3 train.py -dp /cnvrg/cifar10c -e 1
+python3 train.py -dp /data/cifar10c -e 1
