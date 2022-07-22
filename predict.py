@@ -38,4 +38,4 @@ def test_images():
 
     for ipath in test_image_paths:
         predict(ipath)
-test_images()
+#test_images()
