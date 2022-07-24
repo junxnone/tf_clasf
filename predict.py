@@ -8,7 +8,7 @@ os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 
 e = Endpoint()
 
-model = tf.keras.models.load_model('model.h5')
+model = tf.keras.models.load_model('output/model.h5')
 index2label = {0: 'airplane', 1: 'automobile', 2: 'bird', 3: 'cat', 4: 'deer', 5: 'dog', 6: 'frog', 7: 'horse', 8: 'ship', 9: 'truck'}
 
 def preprocess_image(image):
