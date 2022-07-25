@@ -28,7 +28,7 @@ def predict(img_path):
     image = load_and_preprocess_image(img_path)
     result = model.predict(image)
     resinfo = index2label[np.argmax(result)]
-    e.log_metric("result", resinfo)
+    e.log_metric("result", np.argmax(result))
     return resinfo
 
 def test_images():
