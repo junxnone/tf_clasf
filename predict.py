@@ -28,6 +28,8 @@ def predict(img_path):
     image = load_and_preprocess_image(img_path)
     result = model.predict(image)
     print(index2label[np.argmax(result)])
+    e.log_metric("result", index2label[np.argmax(result)])
+
 
 def test_images():
     data_path= '../cifar10_0/test'
